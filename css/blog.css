@@ -1,0 +1,39 @@
+div.blog-header {
+    background-image: url("../images/blog-header-background.jpg");
+}
+
+div.blog-content > div.blog-content__item {
+    margin-bottom: 20px; padding: 15px;
+    background-color: #d6d6d6;
+    transition: 700ms;
+}
+
+div.blog-content > div.blog-content__item:hover {
+    background-color: #cbcbcb;
+    transition: 300ms;
+}
+
+div.blog-content > div.blog-content__item > h3 {
+    margin-top: 0;
+}
+
+div.blog-content > div.blog-content__item > div > div:first-child {
+    float: left;
+    width: 200px;
+}
+
+div.blog-content > div.blog-content__item > div > div:first-child > img {
+    width: 200px;
+}
+
+div.blog-content > div.blog-content__item > div > div:nth-child(2) {
+    float: left;
+    width: 70%;
+    padding-left: 10px;
+}
+
+div.blog-content > div.blog-content__item > div > div:last-child {
+    clear: both;
+}
+
+

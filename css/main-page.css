@@ -1,0 +1,8 @@
+div.mainpage-header {
+    background-image: url("../images/mainpage-header-background.jpg");
+}
+
+div.mainpage-header > h1 {
+    color: #fff;
+    text-shadow: 0 0 15px #000000;
+}
