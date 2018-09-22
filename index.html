@@ -7,20 +7,69 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/main-page.css">
 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
 </head>
 <body>
+
+<div class="modal">
+    <div><h4>Войти на сайт</h4></div>
+    <span>x</span>
+    <div class="modal__body">
+        <form>
+            <input type="text" placeholder="Логин" name="login"/><br/>
+            <input type="password" placeholder="Пароль" name="password"/><br/><br/>
+            <input type="reset" value="Очистить" class="btn btn-default"/> &nbsp;
+            <input type="submit" value="Вход" class="btn btn-primary"/>
+        </form>
+    </div>
+</div>
 
 <div class="content">
     <div>
         <div class="page-header mainpage-header">
-            <h1>Главная страница</h1>
+            <h1>
+                <script type="text/javascript">
+                    document.write(getSiteName());
+                </script>
+            </h1>
         </div>
         <div class="menu">
-            <a href="index.html">Главная</a> |
-            <a href="blog.html">Блог</a>
+            <a href="index.html" id="home-link">Главная</a> |
+            <a href="blog.html">Блог</a> |
+            <a href="#" class="login-button">Вход</a>
         </div>
         <div class="page-content mainpage-content">
-            <!--Тут будет ваш контент страницы-->
+
+            <div class="test-display">
+
+
+                <div>Котята</div>
+                <div>Музыка</div>
+                <div>Гитара</div>
+                <div>Пианино</div>
+                <div>Гитара</div>
+                <div>Гитара</div>
+                <div>Гитара</div>
+                <div>Гитара</div>
+                <div>Гитара</div>
+                <div>Гитара</div>
+                <div>Гитара</div>
+                <div>Гитара</div>
+                <div>Гитара</div>
+                <div>Гитара</div>
+                <div>Гитара</div>
+                <div>Гитара</div>
+                <div>Гитара</div>
+                <div>Гитара</div>
+                <div>Гитара</div>
+                <div>Гитара</div>
+
+
+            </div>
+
+
         </div>
         <div class="page-bottom">
             2018, Мой блог

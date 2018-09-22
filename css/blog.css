@@ -1,11 +1,15 @@
 div.blog-header {
     background-image: url("../images/blog-header-background.jpg");
+    background-position: 0 -300px;
 }
 
 div.blog-content > div.blog-content__item {
     margin-bottom: 20px; padding: 15px;
-    background-color: #d6d6d6;
     transition: 700ms;
+}
+
+div.blog-content > div.blog-content__item:nth-child(even) {
+    background-color: #d6d6d6;
 }
 
 div.blog-content > div.blog-content__item:hover {
@@ -18,8 +22,9 @@ div.blog-content > div.blog-content__item > h3 {
 }
 
 div.blog-content > div.blog-content__item > div > div:first-child {
-    float: left;
+    display: inline-block;
     width: 200px;
+    height: 130px;
 }
 
 div.blog-content > div.blog-content__item > div > div:first-child > img {
@@ -27,8 +32,8 @@ div.blog-content > div.blog-content__item > div > div:first-child > img {
 }
 
 div.blog-content > div.blog-content__item > div > div:nth-child(2) {
-    float: left;
-    width: 70%;
+    display: inline-block;
+    width: 70%; height: 130px;
     padding-left: 10px;
 }
 
