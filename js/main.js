@@ -20,6 +20,28 @@ function getSiteName() {
     return siteName;
 }
 
+function init1() {
+    alert("Вы нажали на кнопку 1000-й раз, вы победитель лотерери!");
+}
+
+
+function init() {
+    let element = document.getElementById("home-link");
+    element.addEventListener("click", () => {
+        element.setAttribute("href", "http://yandex.ru/");
+    });
+}
+
+const menu = `
+    <a href="index.html" id="home-link" name="link">Главная</a> |
+            <a href="blog.html" name="link">Блог</a> |
+            <a href="#" class="login-button" name="link">Вход</a>
+`;
+
+function getMenu() {
+    return menu;
+}
+
 const modalWindow = {
     BLUR_CLASS: "blur",
     modal: '',
@@ -47,6 +69,22 @@ const modalWindow = {
     }
 };
 
+const sliderWidget = {
+    components: '',
+
+    init: (element) => {
+        sliderWidget.components = element;
+
+        sliderWidget.components.click((e) => {
+            let target = $(e.currentTarget);
+            target.find("div").slideToggle("fast");
+        });
+    }
+};
+
 $(document).ready(() => {
     modalWindow.init($(".login-button"));
+    sliderWidget.init($(".slider-questions > div"));
+    sliderWidget.init($(".slider-info > div"));
+    sliderWidget.init($(".slider-qualities > div"));
 });

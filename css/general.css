@@ -80,12 +80,28 @@ div.page-bottom {
     background-color: #7bb576;
 }
 
-.test-display > div {
-     border: 2px solid red;
+.slider > div {
      margin-top: 20px;
+     background-color: #9f9f9f;
      padding: 10px;
-     display: inline-block;
+     cursor: pointer;
  }
+
+.slider > div > div {
+    display: none;
+}
+
+.slider.slider-questions > div {
+    background-color: #7d9b9f;
+}
+
+.slider.slider-info > div {
+    background-color: #729f65;
+}
+
+.slider.slider-qualities > div {
+    background-color: #9f7773;
+}
 
 .modal {
     display: none;
